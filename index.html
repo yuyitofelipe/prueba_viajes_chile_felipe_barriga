@@ -23,7 +23,7 @@
   <body>
     <!-- Carrousel con navbar -->
     <div id="carouselExample" class="carousel slide">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light " id="navbar1">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="navbar1">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -46,7 +46,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-auto fs-5">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#"
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
                   >Inicio</a
                 >
               </li>
@@ -93,11 +96,12 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!-- Quienes somos Main -->
+    <!-- Main -->
     <main class="bg-black">
-      <section id="acerca" class="cointainer text-center d-none d-sm-block">
+      <!-- Quienes Somos -->
+      <section id="acerca" class="container text-center d-none d-sm-block">
         <h5 class="fw-bold text-center text-light py-4" style="padding: 50px">
-          ¿Quienes Somos?
+          ¿QUIENES SOMOS?
           <hr />
         </h5>
         <div class="row">
@@ -157,16 +161,18 @@
           </div>
         </div>
       </section>
+      <!-- Destacados -->
       <section id="Trabajos" class="my-5 py-5 text-center">
-        <h2 class="display-4 fw-bold text-center text-light mb-3">
-          Mis trabajos
-        </h2>
+        <h5 class="fw-bold text-center text-light py-4" style="padding: 50px">
+          DESTACADOS
+          <hr />
+        </h5>
         <div class="container">
           <div class="row">
-            <div class="col-12 col-sm-4 py-2 d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+            <div class="col-12 col-sm-3 py-2 d-flex justify-content-center">
+              <div class="card card_celeste" style="width: 18rem">
                 <img
-                  src="../assets/images/card-1.jpg"
+                  src="assets/img/card1.jpeg"
                   class="card-img-top"
                   alt="imagen de asado de cordero"
                 />
@@ -182,15 +188,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-4 py-2 d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+            <div class="col-12 col-sm-3 py-2 d-flex justify-content-center">
+              <div class="card card_celeste" style="width: 18rem">
                 <img
-                  src="../assets/images/card-2.jpg"
+                  src="assets/img/card2.jpeg"
                   class="card-img-top"
-                  alt="imagen desenfocadas de papas rusticas"
+                  alt="imagen de asado de cordero"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Papas del fin del mundo</h5>
+                  <h5 class="card-title">Asado en la patagonia</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -201,15 +207,34 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-4 py-2 d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+            <div class="col-12 col-sm-3 py-2 d-flex justify-content-center">
+              <div class="card card_celeste" style="width: 18rem">
                 <img
-                  src="../assets/images/card-3.jpg"
+                  src="assets/img/card3.jpeg"
                   class="card-img-top"
-                  alt="imagen de un salmon asado"
+                  alt="imagen de asado de cordero"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Salmones de alaska</h5>
+                  <h5 class="card-title">Asado en la patagonia</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button type="button" class="btn btn-outline-info">
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3 py-2 d-flex justify-content-center">
+              <div class="card card_celeste" style="width: 18rem">
+                <img
+                  src="assets/img/card4.jpeg"
+                  class="card-img-top"
+                  alt="imagen de asado de cordero"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Asado en la patagonia</h5>
                   <p class="card-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -223,45 +248,39 @@
           </div>
         </div>
       </section>
-      <section id="contacto" class="my-3 py-3 mb-3 container mt-5">
-        <h2 class="display-4 fw-bold text-center my-4">Contáctame</h2>
-        <p class="text-center d-none d-sm-block my-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam
-          fuga eius optio, minima accusantium debitis doloremque, est corrupti
-          ipsum molestiae sapiente adipisci repudiandae ipsa quis nam placeat
-          expedita hic?
-        </p>
-        <form action="">
+      <!-- Contacto -->      
+      <section id="contacto" class="py-3 container" style="margin-top: 0; margin-bottom: 0; padding-bottom: 0;">
+        <h5 class="fw-bold text-center text-light py-4" style="padding: 5px;">
+          CONTACTO
+          <hr />
+        </h5>
+        <form action="" id="miFormulario">
           <div>
-            <label for="nombre" class="form-label">Nombre</label>
-            <input
-              type="text"
-              class="form-control"
-              id="nombre"
-              placeholder="nombre"
-            />
+            <label for="nombre" class="form-label text-white">Nombre</label>
+            <input type="text" class="form-control" id="nombre" />
+          </div>
+          <div>
+            <label for="asunto" class="form-label text-white">Asunto</label>
+            <input type="text" class="form-control" id="asunto" />
           </div>
           <div class="mb-3">
-            <label for="correo" class="form-label">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="correo"
-              placeholder="name@example.com"
-            />
+            <label for="mensaje" class="form-label text-white">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="10"></textarea>
           </div>
-          <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" rows="3"></textarea>
-          </div>
-          <div class="my-3 text-end">
-            <button type="button" class="btn btn-info text-light">
+          <div class="my-3">
+            <button type="submit" class="btn btn-info text-light">
               Enviar
             </button>
           </div>
         </form>
       </section>
+      
     </main>
+     <!-- Footer-->
+     <footer class="text-center py-4 text-dark card_celeste" >
+        <p>&copy; 2018 Cupopon Latam</p>
+    </footer>
+    
     <!-- Scripts-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -275,5 +294,16 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </body>
 </html>
+<script>
+  $(document).ready(function () {
+    $("#miFormulario").submit(function (event) {
+      event.preventDefault(); // Prevenir que el formulario se envíe
+
+      // Mostrar el mensaje "enviado"
+      alert("Mensaje Enviado, Gracias");
+    });
+  });
+</script>
