@@ -54,13 +54,13 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#cupones">Quienes Somos</a>
+                <a class="nav-link scroll text-white" href="#quienes_somos">Quienes Somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#destacados">Destacados</a>
+                <a class="nav-link scroll text-white" href="#destacados">Destacados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#contacto">Contacto</a>
+                <a class="nav-link scroll text-white" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -99,7 +99,7 @@
     <!-- Main -->
     <main class="bg-black">
       <!-- Quienes Somos -->
-      <section id="acerca" class="container text-center d-none d-sm-block">
+      <section id="quienes_somos" class="container text-center d-none d-sm-block">
         <h5 class="fw-bold text-center text-light py-4" style="padding: 50px">
           ¿QUIENES SOMOS?
           <hr />
@@ -162,7 +162,7 @@
         </div>
       </section>
       <!-- Destacados -->
-      <section id="Trabajos" class="my-5 py-5 text-center">
+      <section id="destacados" class="my-5 py-5 text-center">
         <h5 class="fw-bold text-center text-light py-4" style="padding: 50px">
           DESTACADOS
           <hr />
@@ -275,10 +275,21 @@
         </form>
       </section>
       
-    </main>
-     <!-- Footer-->
-     <footer class="text-center py-4 text-dark card_celeste" >
-        <p>&copy; 2018 Cupopon Latam</p>
+    </main>     
+    <footer class="text-dark card_celeste py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-start mb-2 mb-md-0">
+                    <h2 class="mb-0 text-white">Viajes Chile</h2>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <i class="fab fa-github-square fa-lg mx-1 icono-blanco"></i>
+                    <i class="fab fa-linkedin fa-lg mx-1 icono-blanco"></i>
+                    <i class="fab fa-twitter-square fa-lg mx-1 icono-blanco"></i>
+                    <i class="fab fa-facebook-square fa-lg mx-1 icono-blanco"></i>
+                </div>
+            </div>
+        </div>
     </footer>
     
     <!-- Scripts-->
@@ -307,3 +318,18 @@
     });
   });
 </script>
+<script>
+    $(document).ready(function(){
+      $(".scroll").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        } 
+      });
+    });
+  </script>
