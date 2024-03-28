@@ -24,3 +24,7 @@ body{
     background-color:rgb(16, 164, 250);
     justify-content: center;
 }
+
+.icono-blanco {
+    color: white;
+  }

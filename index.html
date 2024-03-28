@@ -21,141 +21,9 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- Navbar 
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar1">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            class="img-fluid"
-            src="assets/img/viajes.svg"
-            alt="logo de nuestra empresa"
-            id="idLogoSVG"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-auto fs-5">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cupones">Quienes Somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Destacados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>-->
-    <!-- section carrousel
-    <section
-      class="my-5 d-none d-sm-none d-md-block d-lg-block mx-4 border-dark"
-    >
-      <div id="miCarrusel" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#miCarrusel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#miCarrusel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-        </div>
-        <div class="carousel-inner text-dark">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-12">
-                <img
-                  src="assets/img/card1.jpg"
-                  class="img-fluid"
-                  alt="imagen 1"
-                />
-              </div>
-              <div class="col-12">
-                <img
-                  src="assets/img/card1.jpg"
-                  class="img-fluid"
-                  alt="imagen 2"
-                />
-              </div>
-              <div class="col-12">
-                <img
-                  src="assets/img/card1.jpg"
-                  class="img-fluid"
-                  alt="imagen 3"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4 col-lg-4">
-                <img
-                  src="assests/images/empanadas.jpg"
-                  class="img-fluid"
-                  alt="imagen 4"
-                />
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <img
-                  src="assests/images/colaciones.jpg"
-                  class="img-fluid"
-                  alt="imagen 5"
-                />
-              </div>
-              <div class="col-md-4 col-lg-4">
-                <img
-                  src="assests/images/dulces.jpg"
-                  class="img-fluid"
-                  alt="imagen 6"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#miCarrusel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previo</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#miCarrusel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Proximo</span>
-        </button>
-      </div>
-    </section>-->
-    <!-- Carrousel v2 -->
+    <!-- Carrousel con navbar -->
     <div id="carouselExample" class="carousel slide">
-      <nav class="navbar navbar-expand-lg fixed-top" id="navbar1">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light " id="navbar1">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -178,18 +46,18 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-auto fs-5">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active text-white" aria-current="page" href="#"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#cupones">Quienes Somos</a>
+                <a class="nav-link text-white" href="#cupones">Quienes Somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#destacados">Destacados</a>
+                <a class="nav-link text-white" href="#destacados">Destacados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="nav-link text-white" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -225,15 +93,19 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <!-- Quienes somos Main -->
     <main class="bg-black">
       <section id="acerca" class="cointainer text-center d-none d-sm-block">
-        <h5 class="fw-bold text-center text-light py-4">¿Quienes Somos?</h5>
+        <h5 class="fw-bold text-center text-light py-4" style="padding: 50px">
+          ¿Quienes Somos?
+          <hr />
+        </h5>
         <div class="row">
           <div class="col-12 col-md-4" style="padding: 50px">
             <span class="d-inline-block rounded-pill" id="span_avion">
-              <i class="fa-solid fa-plane fa-3x"></i>
+              <i class="fa-solid fa-plane fa-3x icono-blanco"></i>
             </span>
-            <p class="fw-bold text-auto text-light">
+            <p class="fw-bold text-auto text-light" style="text-align: justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
               ipsam architecto esse ut voluptatum odio omnis obcaecati totam
               doloribus, in repudiandae facilis sint fugit? Maiores voluptatibus
@@ -247,8 +119,8 @@
               voluptatibus unde cumque praesentium corporis!
             </p>
           </div>
-          <div class="col-12 col-md-4" style="padding: 50px">            
-            <p class="fw-bold text-auto text-light">
+          <div class="col-12 col-md-4" style="padding: 50px">
+            <p class="fw-bold text-auto text-light" style="text-align: justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
               ipsam architecto esse ut voluptatum odio omnis obcaecati totam
               doloribus, in repudiandae facilis sint fugit? Maiores voluptatibus
@@ -262,14 +134,14 @@
               voluptatibus unde cumque praesentium corporis!
             </p>
             <span class="d-inline-block rounded-pill" id="span_avion">
-                <i class="fa-solid fa-plane fa-3x"></i>
-              </span>
+              <i class="fa-solid fa-mountain icono-blanco fa-3x"></i>
+            </span>
           </div>
           <div class="col-12 col-md-4" style="padding: 50px">
             <span class="d-inline-block rounded-pill" id="span_avion">
-              <i class="fa-solid fa-plane fa-3x"></i>
+              <i class="fa-solid fa-route icono-blanco fa-3x"></i>
             </span>
-            <p class="fw-bold text-auto text-light">
+            <p class="fw-bold text-auto text-light" style="text-align: justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
               ipsam architecto esse ut voluptatum odio omnis obcaecati totam
               doloribus, in repudiandae facilis sint fugit? Maiores voluptatibus
